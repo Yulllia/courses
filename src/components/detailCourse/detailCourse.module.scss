@@ -1,0 +1,119 @@
+.arrowBack {
+  margin: 30px 40px 0 25px;
+  .link {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.container {
+  max-width: 1500px;
+  margin: 30px auto;
+
+
+  @media screen and (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detailContainer {
+    margin: 0 40px 0 25px;
+    width: 90%;
+    max-width: 100%;
+    @media screen and (max-width: 990px) {
+      max-width: unset;
+      text-align: center;
+    }
+
+    .videoContainer {
+      height: 360px;
+      background-color: #c4bbbb; /* Fallback background color */
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      .text {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .mainTitle {
+      margin: 0 auto 20px 0;
+    }
+    .lessonTitle {
+      margin-top: 20px;
+    }
+    .rating {
+      @media screen and (max-width: 990px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .col {
+    max-width: unset;
+    .lessonList {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      @media screen and (max-width: 990px) {
+        max-width: 90%;
+      }
+
+      & > div > div > div > ul {
+        @media screen and (max-width: 990px) {
+          padding: 30px;
+        }
+      }
+
+      & > h4 {
+        font-size: 16px;
+        @media screen and (max-width: 990px) {
+          text-align: center;
+        }
+      }
+      & > .ant-list-item {
+        padding: 1px 0;
+      }
+      .list {
+        margin-top: 10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 323px;
+
+        @media screen and (max-width: 990px) {
+          width: 100%;
+        }
+
+        .numbers {
+          font-weight: bold;
+        }
+        .lesson {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          cursor: pointer;
+          border-bottom: 1px solid #ddd;
+        }
+        .lesson:hover {
+          background-color: lightgray;
+        }
+        .lessonImage {
+          width: 120px;
+          height: 100%;
+          margin-right: 10px;
+          border-radius: 8px;
+        }
+        .title {
+          font-weight: 450;
+          margin: 0;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

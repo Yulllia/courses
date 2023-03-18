@@ -44,3 +44,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+У функції обробника подій handleKeyDown ми перевіряємо, яку клавішу було натиснуто, і змінюємо швидкість відтворення відео відповідно до того, чи була натиснута стрілка вгору або вниз. (для зміни швидкості програвання  відео через клавіатуру)
+Швидкість в межах 0.4-4
